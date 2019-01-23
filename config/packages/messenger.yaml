@@ -1,0 +1,7 @@
+framework:
+    messenger:
+        transports:
+            beanstalk: enqueue://default
+
+        routing:
+            'App\Message\SmsNotification': beanstalk
